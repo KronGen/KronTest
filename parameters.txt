@@ -1,10 +1,12 @@
 KRONTEST
 -gen:model+kron -plttype:model+kron -plt:all
 GRAPHGEN
--g:genpy -module:random_graphs -func:barabasi_albert_graph -n:1024 -m:3
+-g:genpy -module:random_graphs -func:barabasi_albert_graph -n:512 -m:3
 MTXGEN
--m:0.483894;0.472488;0.451997;0.992077 -rs:2 
+-m:create -rs:2 
 KRONFIT
 -m:r -o:fitmtxmodel.txt -gi:50 -w:10000 -s:100000 -p:d -nsp:1 -n0:2
 KRONGEN
--i:10 -n:1 -isdir:false
+-i:9 -n:1 -isdir:false -sf:2
+MAXDEGGEN
+-n:10 -fn:maxdeg.tab

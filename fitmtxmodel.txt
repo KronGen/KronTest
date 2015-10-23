@@ -1,0 +1,15 @@
+INIT PARAM	[0.386925, 0.881305; 0.100472, 0.634078], MTX SUM 2.002781
+SCALED PARAM	[0.462074, 1; 0.119986, 0.757229], MTX SUM 2.339288
+Command line options
+	m:r
+	o:fitmtxmodel.txt
+	gi:50
+	w:10000
+	s:100000
+	p:d
+	nsp:1
+	n0:2
+Loglikelihood	 -32848.05
+Absolute error (based on expected number of edges)	0.008696
+RunTime	94.954
+Estimated initiator	[0.483894, 0.472488; 0.451997, 0.992077], mtx sum 2.400456
