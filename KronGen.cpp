@@ -340,7 +340,7 @@ void KroneckerBySample(vector<TStr> CommandLineArgs){
     Try
         Env = TEnv(CommandLineArgs[KRONTEST], TNotify::NullNotify);
     // generation of big model and its Kronecker product is required
-    const TStr Gen = Env.GetIfArgPrefixStr("-gen:", "model+kron", "Generation of big model and/or its Kronecker product (model, kron, model+kron)");
+    const TStr Gen = Env.GetIfArgPrefixStr("-gen:", "model+kron", "Generation of sample or/and its Kronecker product (model, kron, model+kron)");
     // plot type
     const TStr Plt = Env.GetIfArgPrefixStr("-plt:", "all", "Type of plots (cum, noncum, all)");
     // time estimates file name
@@ -350,7 +350,7 @@ void KroneckerBySample(vector<TStr> CommandLineArgs){
     CheckParams(Gen, Plt);
     
     PyInit("PySettings.txt");
-       
+      
 
     if (Gen != "none")
     {
